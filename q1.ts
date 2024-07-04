@@ -13,7 +13,7 @@ interface Shop {
 function buyItem(hero:Hero, shop:Shop) {
   if(hero.gold >=  shop.price ){
   hero.items.push(shop.item);
-  hero.gold - shop.price;
+  hero.gold = hero.gold - shop.price;
 }
   return hero;
 }
